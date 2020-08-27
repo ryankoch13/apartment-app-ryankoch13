@@ -1,0 +1,149 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@font-face {
+    font-family: 'Alata';
+    src: font_url('fonts/Alata-Regular.ttf')
+}
+html * {
+    font-family: 'Alata';
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none !important;
+}
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+p {
+
+}
+.hero {
+    background-color: darkred;
+}
+.header-lead {
+    justify-content: left;
+    padding-left: 40px;
+}
+.header-icons {
+    align-items: flex-end;
+}
+.home-icon {
+    background-color: darkred;
+    text-align: center;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.home-icon a:hover {
+    color: blanchedalmond;
+}
+.home-link {
+    color: white;
+}
+.display-3 {
+    color: white;
+}
+.lead {
+    color: white;
+}
+
+.hero-row {
+    align-items: flex-end;
+}
+.NavBarBrand {
+    color: black;
+}
+.NavBarToggler {
+    color: black;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+}
+.home-header {
+    padding: 60px;
+}
+#main-img {
+    padding: 60px;
+}
+.footer-icon {
+    padding: 20px;
+}
+.footer-link {
+    color: darkred;
+}
+.navitem {
+
+}
+.form {
+
+}
+.form-item {
+
+}
+.form-title {
+
+}
+.form-input {
+
+}
+.s-button {
+
+}
+.apartments-row {
+    margin-left: 60px;
+    padding: 60px;  
+}
+.apartment-tile {
+    text-align: center;
+}
+.apartment-info {
+
+}
+.apartment {
+
+}
+.info-card {
+    margin-top: 60px;
+    margin-left: 60px;
+    padding: 60px;
+    text-align: center;
+}
+#show-img {
+    padding: 60px;
+    margin-right: 60px;
+}
+.show-header {
+    text-align: center;
+    padding-top: 60px;
+}
+.info-title {
+
+}
+
+@import 'bootstrap';
