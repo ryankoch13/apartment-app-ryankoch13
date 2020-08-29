@@ -39,6 +39,13 @@ class ApartmentShow extends Component{
                   <h5>Bedrooms:</h5><p>{ apartment.bedrooms }</p>
                   <h5>Bathrooms:</h5><p>{ apartment.bathrooms }</p>
                   <h5>Pets Allowed:</h5><p>{ apartment.pets }</p>
+                  <NavLink
+                        to={"/index"}
+                      >
+                      <Button className="s-button">
+                        Back to All Apartments
+                      </Button>
+                      </NavLink>
                   { !this.props.logged_in ?
                     <p>Login to see more options</p>
                     : this.props.current_user.id === apartment.user_id &&
@@ -47,20 +54,14 @@ class ApartmentShow extends Component{
                             <Button className="s-button">Edit Apartment</Button>
                           </NavLink>
 
-                          <Button onClick = {this.handleClick}>
+                          <Button className="r-button" onClick = {this.handleClick}>
                             Delete Apartment
                           </Button>
                         </>
                       }
-                      <NavLink
-                        to={"/index"}
-                      >
-                      <Button className="s-button">
-                        Back to All Apartments
-                      </Button>
                       {this.state.isDeleted && <Redirect to = "/index" />
                   }
-                  </NavLink>
+                  
                 </CardTitle>
               </Card>
             </Col>

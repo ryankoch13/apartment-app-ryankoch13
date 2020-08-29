@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import {Form, FormGroup, Input, Label, Button} from 'reactstrap';
-import {Redirect} from 'react-router-dom'
+import {Redirect, NavLink} from 'react-router-dom'
 
 class ApartmentEdit extends Component {
     constructor(props){
         super(props)
         this.state = {
             form : {
-                street: "",
-                city: "",
-                state: "",
-                manager: "",
-                email: "",
-                price: "",
-                bedrooms: "",
-                bathrooms: "",
-                pets: "",
+                street: this.props.apartment.street,
+                city: this.props.apartment.city,
+                state: this.props.apartment.state,
+                manager: this.props.apartment.manager,
+                email: this.props.apartment.email,
+                price: this.props.apartment.price,
+                bedrooms: this.props.apartment.bedrooms,
+                bathrooms: this.props.apartment.bathrooms,
+                pets: this.props.apartment.pets,
                 user_id: this.props.current_user.id
             },
             success : false
@@ -136,10 +136,12 @@ class ApartmentEdit extends Component {
                     onClick = { this.handleSubmit }>
                         Submit
                     </Button>
+                    <NavLink to={"/index"}>
+                        <Button className="r-button">
+                            Cancel
+                        </Button>
+                    </NavLink>
                 </Form>
-
-                <Footer />
-
                 { this.state.success && <Redirect to = "/index" />}
             </div>
         )

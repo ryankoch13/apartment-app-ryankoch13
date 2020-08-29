@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import 'bootstrap';
 @font-face {
     font-family: 'Alata';
     src: font_url('fonts/Alata-Regular.ttf')
@@ -24,30 +25,12 @@ html * {
 a {
     text-decoration: none !important;
 }
-h1 {
-
-}
-h2 {
-
-}
-h3 {
-
-}
-h4 {
-
-}
-h5 {
-
-}
-p {
-
-}
 .hero {
     background-color: darkred;
 }
 .header-lead {
     justify-content: left;
-    padding-left: 40px;
+    padding-left: 100px;
 }
 .header-icons {
     align-items: flex-end;
@@ -67,6 +50,7 @@ p {
 }
 .display-3 {
     color: white;
+    height: 92px;
 }
 .lead {
     color: white;
@@ -84,8 +68,17 @@ p {
 .main-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: darkred;
+}
+.main-white {
+    background-color: white;
 }
 .home-header {
+    padding: 60px;
+}
+.home-text {
     padding: 60px;
 }
 #main-img {
@@ -97,36 +90,44 @@ p {
 .footer-link {
     color: darkred;
 }
-.navitem {
-
-}
 .form {
-
+    width: 50%;
+    margin-top: 60px;
+    padding-left: 120px;
 }
-.form-item {
-
+.info-card {
+    padding: 20px;
 }
-.form-title {
-
+.info-title h5 {
+    padding: 5px !important;
+    margin: 5px !important;
 }
-.form-input {
-
+// .form-item {
+//     padding: 20px;
+// }
+.sub-button {
+    background-color: firebrick !important;
+    margin: auto !important;
+    border-color: darkred !important;
 }
 .s-button {
-
+    background-color: saddlebrown !important;
+    color: white !important;
+}
+.r-button {
+    background-color: darkred !important;
+    color: white !important;
 }
 .apartments-row {
     margin-left: 60px;
-    padding: 60px;  
+    padding: 60px; 
 }
 .apartment-tile {
     text-align: center;
 }
-.apartment-info {
-
-}
-.apartment {
-
+.devise-title {
+    margin-bottom: 40px;
+    height: 50px;
 }
 .info-card {
     margin-top: 60px;
@@ -142,8 +143,6 @@ p {
     text-align: center;
     padding-top: 60px;
 }
-.info-title {
-
+.devise-title {
+    color: darkred;
 }
-
-@import 'bootstrap';
