@@ -2,4 +2,4 @@
 
 This is a small Apartment listing/finding app that I put together. To run on your machine, you will need to clone the repository and have
 Rails Version >6.0. Once you have the repository cloned, you may need to run the command $bundle install in terminal prior to starting
-the Rails server. Once the Rails server is running, navigate to your local ip address and enjoy! 
+the Rails server. Once the Rails server is running (Mac terminal "rails s"), navigate to your local ip address and enjoy! 
